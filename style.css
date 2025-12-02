@@ -1,148 +1,97 @@
-/* ======== GERAL ======== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* ======= ESTILO GERAL ======= */
 body {
-  font-family: "Poppins", Arial, sans-serif;
-  background-color: #f6f4ef;
-  color: #3b3b3b;
-  line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* ======== TOPO ======== */
-.topo {
-  background-color: #e2c9a6;
-  color: #2a2a2a;
-  text-align: center;
-  padding: 20px;
+/* ======= CABEÇALHO ======= */
+.cabecalho {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
 }
 
-.topo h1 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
+.cabecalho h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* ======= MENU ======= */
+.menu {
+    background-color: #7c0000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 .menu a {
-  color: #2a2a2a;
-  text-decoration: none;
-  margin: 0 12px;
-  font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
 .menu a:hover {
-  border-bottom: 2px solid #2a2a2a;
+    color: #002fff;
+    transform: scale(1.1);
 }
 
-/* ======== BANNER ======== */
-.banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-              url("imagens/banner.jpg") center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
+/* LINK ATIVO */
+.menu a.ativo {
+    color: #00ffff;                     /* cor do texto */
+    border: 2px solid #ff0000;          /* borda ao redor */
+    border-radius: 8px;                 /* deixar mais bonito */
+    padding: 8px 15px;                  /* evita que a borda fique muito colada */
+    background-color: rgba(0, 255, 255, 0.15); /* destaque suave */
+    transform: scale(1.1);              /* aumenta o botão */
 }
 
-.texto-banner h2 {
-  font-size: 2.2em;
-  margin-bottom: 15px;
-  font-weight: 600;
+ 
+/* ======= TÍTULOS ======= */
+h2 {
+    color: #800000;
+    margin-left: 20px;
 }
 
-.texto-banner p {
-  font-size: 1.1em;
+/* ======= PARÁGRAFOS ======= */
+p, ul {
+    margin: 20px;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* ======== SEÇÕES ======== */
-.sessao {
-  padding: 60px 20px;
-  text-align: center;
-  max-width: 900px;
-  margin: auto;
+/* ======= LISTAS ======= */
+ul li {
+    margin-bottom: 10px;
 }
 
-.sessao h2 {
-  margin-bottom: 20px;
-  color: #2e2e2e;
-  font-size: 1.7em;
+/* ======= RODAPÉ ======= */
+footer {
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    box-shadow: 0px -2px 5px rgba(0,0,0,0.2);
 }
 
-.sessao p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
+footer strong {
+    font-size: 16px;
 }
 
-/* ======== CARDS ======== */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+/* ======= ANIMAÇÕES (opcional) ======= */
+body {
+    animation: fadeIn 0.8s ease-in-out;
 }
 
-.card {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  width: 260px;
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* ======== FORMULÁRIO ======== */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-input, textarea {
-  width: 80%;
-  max-width: 400px;
-  padding: 10px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-button {
-  background-color: #b98b59;
-  color: white;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background-color: #9e744a;
-}
-
-/* ======== RODAPÉ ======== */
-.rodape {
-  background-color: #2f2f2f;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-/* ======== RESPONSIVIDADE ======== */
-@media (max-width: 768px) {
-  .menu {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
