@@ -1,36 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre o Tema - Matemática</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre a Física</title>
+<link rel="stylesheet" href="style.css">
 </head>
+<style>
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f8;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #160049;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #160049;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    border-left: 5px solid #160049;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+
+a {
+    color: #160049;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #160049;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+ (max-width: 600px) {
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+</style>
 <body>
-   <div class="cabecalho">   
-       <h1>Sobre o Tema: Matemática</h1>
-  </div>
-  <div class="menu">
-    <a href="index.html">Início</a> 
-    <a href="Sobre.html" class="ativo">Sobre</a>
-    <a href="Conteudo.html">Conteúdo</a>
-    <a href="Curiosidade.html">Curiosidade</a>
-    <a href="Contato.html">Contato</a>
-  </div>
 
-  <h2>Sobre a Matemática</h2>
-  <p>A Matemática é uma ciência fundamental no desenvolvimento do pensamento lógico e crítico. Ela é abordada na BNCC como um componente essencial para o ensino básico, com o objetivo de desenvolver habilidades que vão desde a resolução de problemas simples até o raciocínio mais complexo.</p>
+<header>
+  <h1>Sobre a Física</h1>
+<nav class="menu">
+<a href="index.html">Início</a>
+<a href="Sobre.html">Sobre</a>
+<a href="Conteudo.html">Conteúdo</a>
+<a href="Curiosidade.html">Curiosidades</a>
+<a href="Contato.html">Contato</a>
+</nav>
+</header>
 
-  <h2>Objetivos da Matemática no Ensino Básico</h2>
-  <p>Segundo a BNCC, o ensino de Matemática visa a capacitação do aluno para:</p>
-  <ul>
-    <li>Compreender e aplicar conceitos matemáticos em diversas situações.</li>
-    <li>Desenvolver o raciocínio lógico e a resolução de problemas.</li>
-    <li>Utilizar a Matemática no cotidiano, como em finanças pessoais e no planejamento.</li>
-  </ul>
+<section class="sobre">
 
-  <footer>
-    <p><strong>Desenvolvido por [Seu Nome] - IW1 - Etec Prof. Milton Gazzetti © 2025</strong></p>
- </footer>
+<section class="historia-fisica">
+  <h2>História da Física</h2>
+  <p>
+    A história da física acompanha a evolução do pensamento humano sobre a natureza. Desde os primeiros questionamentos sobre o movimento dos astros até as tecnologias modernas, a física sempre buscou explicar como o universo funciona. Ela nasceu da observação, da curiosidade e da necessidade de compreender fenômenos naturais.
+  </p>
+
+  <h3>Física na Antiguidade</h3>
+  <p>
+    Os povos antigos — como egípcios, babilônios, chineses e indianos — já observavam os astros, estudavam mecânica simples e desenvolviam instrumentos de medição. Técnicas como alavancas, planos inclinados e engrenagens começaram a surgir nessa época. Esses conhecimentos serviram de base para as futuras teorias físicas.
+  </p>
+  <img class="historia-img" src="https://blog.ufes.br/alantoribio/files/2012/03/imagem.jpg" alt="Rolos egípcios antigos">
+
+  <h3>Grécia Antiga</h3>
+  <p>
+    A física ganhou forma mais filosófica na Grécia. Pensadores da época fizeram as primeiras tentativas de explicar a natureza por meio da razão. Mais tarde, estudiosos desenvolveram leis fundamentais da hidrostática e da mecânica, que influenciam a ciência até hoje. A observação e o raciocínio lógico se tornaram pilares do pensamento físico.
+  </p>
+  <img class="historia-img" src="https://static.todamateria.com.br/upload/pi/ta/pitagoras-cke.jpg" alt="Templo grego antigo">
+
+  <h3>Revolução Científica</h3>
+  <p>
+    Entre os séculos XVI e XVII, a física se transformou profundamente. Surgiram métodos experimentais e leis que explicavam o movimento e a gravitação universal — fundando a física moderna. Esse período marcou o início da física enquanto ciência sistematizada, com base em experimentação e matemática.
+  </p>
+  <img class="historia-img" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Nikolaus_Kopernikus_2.jpg" alt="Retrato de Isaac Newton">
+
+  <h3>Física Moderna</h3>
+  <p>
+    No século XX, a física passou por uma revolução com ideias que mudaram completamente a forma de entender o universo: da teoria da relatividade à mecânica quântica. Estas teorias explicam fenômenos extremamente rápidos, pequenos ou energéticos — e constituem a base de tecnologias modernas, como chips, lasers e sistemas de comunicação. :contentReference[oaicite:0]{index=0}
+  </p>
+  <img class="historia-img" src="https://12e915eb3f.cbaul-cdnwnd.com/6ced79f7fe242d3699ece7ba98d65ffa/200000180-679d968980/700/Diagrama%20-%20Fisica%20Moderna.jpg?ph=12e915eb3f" alt="Conceito de física moderna">
+</section>
+
+<footer>Desenvolvido por Joaquim - IW1 - Etec Prof. Milton Gazzetti © 2025</footer>
+
+</section>
 </body>
 </html>

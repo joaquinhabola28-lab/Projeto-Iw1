@@ -1,29 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato - Matemática</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato</title>
+<link rel="stylesheet" href="style.css">
 </head>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #160049;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+  html, body {
+     height: 100%;
+    margin: 0;
+  }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column
+}
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #160049;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #160049;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    border-left: 5px solid #160049;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+
+a {
+    color: #160049;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+
+
+
+</style>
 <body>
-   <div class="cabecalho">   
-       <h1>Contato</h1>
-  </div>
-  <div class="menu">
-    <a href="index.html">Início</a> 
-    <a href="Sobre.html">Sobre</a>
-    <a href="Conteudo.html">Conteúdo</a>
-    <a href="Curiosidade.html">Curiosidade</a>
-    <a href="Contato.html" class="ativo">Contato</a>
-  </div>
+<header>
+  <h1>Contate-nos</h1>
+<nav class="menu">
+<a href="index.html">Início</a>
+<a href="Sobre.html">Sobre</a>
+<a href="Conteudo.html">Conteúdo</a>
+<a href="Curiosidade.html">Curiosidades</a>
+<a href="Contato.html">Contato</a>
+</nav>
+</header>
 
-  <h2>Entre em Contato</h2>
-  <p>Se tiver dúvidas ou sugestões, entre em contato através do e-mail:</p>
-  <p><strong>Email:</strong> seuemail@exemplo.com</p>
 
-  <footer>
-    <p><strong>Desenvolvido por [Seu Nome] - IW1 - Etec Prof. Milton Gazzetti © 2025</strong></p>
- </footer>
+<section class="contato">
+<h2>Contate-nos</h2>
+<form>
+<input type="text" placeholder="Nome Completo" required>
+<input type="email" placeholder="E-mail" required>
+<textarea placeholder="Observação" required></textarea>
+<button type="submit">Enviar</button>
+</form>
+</section>
+<footer>Desenvolvido por Joaquim - IW1 - Etec Prof. Milton Gazzetti © 2025</footer>
 </body>
 </html>
